@@ -1,0 +1,22 @@
+.btn {
+  border: solid 2px #ff7fcf;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 33px;
+  color: black;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  //margin-top: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ff7fcf;
+    color: white;
+  }
+}

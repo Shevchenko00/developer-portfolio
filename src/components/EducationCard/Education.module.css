@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  width: 300px;
+}
+.card .logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+.card .content {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+}
+.card .content .title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+}
+.card .content .skills {
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: #d1d5db;
+  margin-left: 0.5rem;
+}
+.card .content .skills ul {
+  padding-left: 1rem;
+  background-color: transparent;
+  list-style-type: disc;
+}
+.card .content .skills li {
+  background-color: transparent;
+}
+
+span {
+  background-color: #2a2a2a;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+  background-color: #2a2a2a;
+}
+.skillsGrid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skillsGrid ul li {
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=Education.module.css.map */

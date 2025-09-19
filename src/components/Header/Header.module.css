@@ -1,0 +1,37 @@
+.header {
+  background-color: #141414;
+  width: 975px;
+  height: 94px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+}
+.header ul {
+  margin-left: 130px;
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  padding: 0;
+  background-color: transparent;
+}
+.header ul li {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  background-color: #141414;
+  padding: 0;
+  display: flex;
+}
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #141414;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+.header ul li a:hover {
+  color: #ff7fcf;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

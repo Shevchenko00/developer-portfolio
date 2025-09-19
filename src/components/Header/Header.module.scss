@@ -1,0 +1,39 @@
+.header {
+  background-color: #141414;
+  width: 975px;
+  height: 94px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+
+  ul {
+    margin-left: 130px; // оставляем нужный отступ
+    list-style: none;
+    display: flex;
+    gap: 55px; // расстояние между пунктами
+    padding: 0;
+    background-color: transparent;
+
+    li {
+      font-size: 24px;
+      font-family: "DM Sans", sans-serif;
+      font-weight: bold;
+      background-color: #141414;
+      padding: 0; // убираем лишний padding-left, чтобы не сдвигать ещё
+      display: flex; // чтобы вложенный <a> занимал правильное место
+
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #141414;
+        padding: 5px 10px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ff7fcf;
+        }
+      }
+    }
+  }
+}

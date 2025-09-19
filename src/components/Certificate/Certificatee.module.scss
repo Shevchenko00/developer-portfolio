@@ -1,0 +1,36 @@
+h2 {
+text-align: center}
+
+
+.educationSection {
+  height: 722px;
+  margin: 0 auto;
+
+  width: 975px;
+  background-color: #141414;
+  color: white;
+  padding: 2rem;
+  font-family: sans-serif;
+
+  h2 {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    background-color: transparent;
+
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.cardsContainer {
+  background-color: #2a2a2a;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

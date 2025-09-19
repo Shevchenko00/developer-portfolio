@@ -1,0 +1,71 @@
+.card {
+  background-color: #111111;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-left: 136px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.image {
+  width: 228px;
+  height: 174px;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  background-color: #111111;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  background-color: #111111;
+
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+}
+
+.features {
+  list-style: disc inside;
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+  background-color: #111111;
+}
+
+
+li {
+  background-color: #111111;
+}
+
+.project_button{
+  border: solid 2px #ff7fcf;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 33px;
+  color: black;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ff7fcf;
+    color: white;
+  }
+}

@@ -1,0 +1,17 @@
+.partfolio_container {
+  margin: 0 auto;
+  width: 975px;
+  height: 669px;
+  background-color: #141414;
+}
+
+.partfolio_head {
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 61px auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Partfolio.module.css.map */
