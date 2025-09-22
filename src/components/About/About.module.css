@@ -7,13 +7,16 @@
 
 .about_head {
   color: #FFFFFF;
+  background-color: #141414;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  margin: 98px 161px 5px;
+  padding-left: 161px;
+  padding-top: 78px;
 }
 
 .about_paragraph {
+  background-color: #141414;
   color: #FFFFFF;
   font-family: "Open Sans Re", sans-serif;
   font-size: 15px;

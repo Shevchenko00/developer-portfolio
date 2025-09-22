@@ -5,6 +5,7 @@ import Divider from "./components/Divider/Divider.tsx";
 import About from "./components/About/About.tsx";
 import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import Certificate from "./components/Certificate/Certificate.tsx";
+import Experience from "./components/Experience/Experience.tsx";
 
 const App = ():JSX.Element => {
     return (
@@ -16,6 +17,10 @@ const App = ():JSX.Element => {
             <Portfolio/>
             <Divider/>
             <Certificate/>
+            <Divider/>
+            <Experience/>
+            <Divider/>
+
         </>
     );
 }

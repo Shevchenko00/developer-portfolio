@@ -1,19 +1,41 @@
-h2 {
-text-align: center}
+
+.education_title {
+  color: #FFFFFF ;
+  background-color: #141414;
+  width: 975px ;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 61px;
+  padding-bottom: 61px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
+.education_head {
+  color: #FFFFFF ;
+  background-color: #141414;
+  width: 975px ;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 61px;
+  margin: 0 auto;
+  text-align: center;
+}
 .educationSection {
   height: 722px;
   margin: 0 auto;
-
+  padding-left: 161px;
+  padding-top: 61px;
   width: 975px;
   background-color: #141414;
   color: white;
-  padding: 2rem;
   font-family: sans-serif;
 
   h2 {
-    background-color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -21,14 +43,14 @@ text-align: center}
 
   h3 {
     background-color: transparent;
-
+    padding-top: 10px;
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 }
 
 .cardsContainer {
-  background-color: #2a2a2a;
+  background-color: #141414;
 
   display: flex;
   flex-wrap: wrap;

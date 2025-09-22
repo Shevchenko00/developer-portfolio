@@ -7,10 +7,14 @@
 
 .partfolio_head {
   color: #FFFFFF;
+  background-color: #141414;
+  width: 975px;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  margin: 61px auto;
+  padding-top: 61px;
+  padding-bottom: 61px;
+  margin: 0 auto;
   text-align: center;
 }
 

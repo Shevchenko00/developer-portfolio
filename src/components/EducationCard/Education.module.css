@@ -1,7 +1,6 @@
 .card {
   display: flex;
-  background-color: #2a2a2a;
-  padding: 1rem;
+  background-color: #141414;
   border-radius: 0.5rem;
   gap: 1rem;
   width: 300px;
@@ -14,38 +13,39 @@
 }
 .card .content {
   display: flex;
+  padding-top: 5px;
   background-color: transparent;
   flex-direction: column;
 }
 .card .content .title {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  background-color: transparent;
+  background-color: #141414;
 }
 .card .content .skills {
   font-size: 0.9rem;
-  background-color: transparent;
+  background-color: #141414;
   color: #d1d5db;
   margin-left: 0.5rem;
 }
 .card .content .skills ul {
   padding-left: 1rem;
-  background-color: transparent;
+  background-color: #141414;
   list-style-type: disc;
 }
 .card .content .skills li {
-  background-color: transparent;
+  background-color: #141414;
 }
 
 span {
-  background-color: #2a2a2a;
+  background-color: #141414;
 }
 
 .skillsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 20px;
-  background-color: #2a2a2a;
+  gap: 0 25px;
+  background-color: #141414;
 }
 .skillsGrid ul {
   list-style: none;
@@ -54,6 +54,7 @@ span {
 }
 .skillsGrid ul li {
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=Education.module.css.map */

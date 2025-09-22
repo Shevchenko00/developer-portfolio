@@ -1,5 +1,5 @@
 .card {
-  background-color: #111111;
+  background-color: #141414;
   color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -13,24 +13,26 @@
   width: 228px;
   height: 174px;
   object-fit: contain;
+  background-color: #141414;
   border-radius: 0.25rem;
 }
 
 .content {
   display: flex;
+  background-color: #141414;
   flex-direction: column;
   flex: 1;
 }
 
 .title {
-  background-color: #111111;
+  background-color: #141414;
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .description {
-  background-color: #111111;
+  background-color: #141414;
   margin-bottom: 0.5rem;
   color: #d1d5db;
 }
@@ -39,11 +41,11 @@
   list-style: disc inside;
   margin-bottom: 0.75rem;
   color: #d1d5db;
-  background-color: #111111;
+  background-color: #141414;
 }
 
 li {
-  background-color: #111111;
+  background-color: #141414;
 }
 
 .project_button {

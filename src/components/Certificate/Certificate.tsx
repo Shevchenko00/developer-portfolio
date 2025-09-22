@@ -1,4 +1,4 @@
-import {JSX} from "react";
+import type {JSX} from "react";
 import styles from './Certificatee.module.scss'
 import ich_logo from "../../assets/ich_logo.png";
 import meta_logo from "../../assets/meta_logo.png";
@@ -8,8 +8,10 @@ import michigan_logo from "../../assets/michigan_logo.png";
 import EducationCard from "../EducationCard/EducationCard.tsx";
 const Certificate = ():JSX.Element => {
     return (
-        <section className={styles.educationSection}>
-            <h2>Education & Certificates</h2>
+        <>
+            <h1 className={styles.education_head}>Education & Certificates</h1>
+            <section className={styles.educationSection}>
+
 
             <h3>Further education</h3>
             <div className={styles.cardsContainer}>
@@ -39,6 +41,7 @@ const Certificate = ():JSX.Element => {
                 />
             </div>
         </section>
+        </>
     );
 };
 
