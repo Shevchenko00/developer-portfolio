@@ -1,12 +1,18 @@
 .footer_container {
   margin: 0 auto;
-  height: 120px;
-  width: 975px;
+  width: 100%;
+  max-width: 975px;
+  min-height: 120px;
   background-color: rgba(255, 252, 252, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    min-height: auto;
+  }
 }
 
 .footer_text {
@@ -15,4 +21,10 @@
   color: #141414;
   background-color: transparent;
   text-align: center;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    padding: 0 10px;
+  }
 }
