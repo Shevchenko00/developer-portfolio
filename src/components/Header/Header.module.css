@@ -22,7 +22,8 @@
   gap: 55px;
   margin-left: 130px;
 }
-.nav li a {
+.nav li button {
+  border: none;
   text-decoration: none;
   color: white;
   font-size: 24px;
@@ -30,7 +31,7 @@
   font-weight: bold;
   transition: color 0.3s ease;
 }
-.nav li a:hover {
+.nav li button:hover {
   color: #ff7fcf;
 }
 
@@ -71,7 +72,8 @@
     display: none;
     padding: 10px 0;
   }
-  .nav li a {
+  .nav li button {
+    display: inline;
     font-size: 18px;
     padding: 8px 12px;
   }

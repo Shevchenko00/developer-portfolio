@@ -1,13 +1,24 @@
-import { useState } from 'react';
+import { type JSX, useState } from 'react';
 import styles from './Header.module.scss';
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => setIsOpen(!isOpen);
+const Header = (): JSX.Element => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const HEADER_HEIGHT = 94; // укажи точную высоту твоего header
+
+    const toggleMenu = (): void => setIsOpen(!isOpen);
+
+    const scrollToSection = (id: string): void => {
+        const section: HTMLElement | null = document.getElementById(id);
+        if (section) {
+            const rect = section.getBoundingClientRect().top;
+            const scrollTop = window.pageYOffset + rect - HEADER_HEIGHT;
+            window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+            setIsOpen(false); // закрываем меню на мобильных
+        }
+    };
 
     return (
         <header className={styles.header}>
-
             <div
                 className={`${styles.burger} ${isOpen ? styles.open : ''}`}
                 onClick={toggleMenu}
@@ -18,11 +29,11 @@ const Header = () => {
             </div>
 
             <ul className={`${styles.nav} ${isOpen ? styles.show : ''}`}>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#certificate">Certificates</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><button onClick={() => scrollToSection('about')}>About me</button></li>
+                <li><button onClick={() => scrollToSection('portfolio')}>Portfolio</button></li>
+                <li><button onClick={() => scrollToSection('certificate')}>Certificates</button></li>
+                <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>
+                <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
             </ul>
         </header>
     );

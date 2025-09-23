@@ -9,7 +9,7 @@ import EducationCard from "../EducationCard/EducationCard.tsx";
 const Certificate = ():JSX.Element => {
     return (
         <>
-            <h1 className={styles.education_head}>Education & Certificates</h1>
+            <h1 id={'certificate'} className={styles.education_head}>Education & Certificates</h1>
             <section className={styles.educationSection}>
 
 

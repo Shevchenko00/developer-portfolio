@@ -5,9 +5,9 @@ import berlin_logo from "../../assets/berlin_logo.png";
 const Experience = (): JSX.Element => {
     return (
         <>
-        <h2 className={styles.title}>Experience</h2>
+        <h2 id={'experience'} className={styles.title}>Experience</h2>
 
-        <section className={styles.experienceSection}>
+        <section className={styles.experienceSection} >
 
             <div className={styles.experienceCard}>
                 <img src={berlin_logo} alt="Kunst Schule Berlin" className={styles.logo} />

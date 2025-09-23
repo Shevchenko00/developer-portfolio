@@ -5,7 +5,7 @@ import styles from './Partfolio.module.scss'
 const Portfolio = (): JSX.Element => {
     return (
         <>
-            <h1 className={styles.partfolio_head}>Portfolio Projects</h1>
+            <h1 id={'portfolio'} className={styles.partfolio_head}>Portfolio Projects</h1>
             <div className={styles.partfolio_container}>
             <ProjectCard image={TShop} title={'Telegram E-Commerce bot'}
                          description={'An open-source e-commerce platform built with Python'}
