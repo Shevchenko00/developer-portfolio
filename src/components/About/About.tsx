@@ -1,10 +1,12 @@
 import type { JSX } from "react";
 import styles from './About.module.scss'
+import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 
 
 const About = (): JSX.Element => {
     return (
         <>
+            <AnimatedSection direction={"right"} once={false}>
             <div id={'about'} className={styles.about_container}>
                 <h1 className={styles.about_head}>I’m Full-Stack Developer</h1>
                 <p className={styles.about_paragraph}>I am a full-stack developer specializing in Django + React with SQL databases, with a strong backend-first focus. I build various types of bots (e-commerce, news, etc.), work on automation projects, and deliver scalable web applications.<br/>
@@ -14,6 +16,7 @@ const About = (): JSX.Element => {
                 </a>
 
             </div>
+            </AnimatedSection>
         </>
     )
 }

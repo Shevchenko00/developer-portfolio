@@ -1,10 +1,12 @@
 import type { JSX } from "react";
 import styles from "./Experience.module.scss";
 import berlin_logo from "../../assets/berlin_logo.png";
+import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 
 const Experience = (): JSX.Element => {
     return (
         <>
+            <AnimatedSection direction={'right'} once={false}>
         <h2 id={'experience'} className={styles.title}>Experience</h2>
 
         <section className={styles.experienceSection} >
@@ -30,6 +32,7 @@ const Experience = (): JSX.Element => {
                 </div>
             </div>
         </section>
+            </AnimatedSection>
         </>
     );
 };

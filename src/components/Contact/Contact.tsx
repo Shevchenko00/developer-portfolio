@@ -1,7 +1,10 @@
 import type {JSX} from "react";
 import styles from './Contact.module.scss'
+import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 const Contact = (): JSX.Element => {
     return (
+        <>
+            <AnimatedSection direction={"top"} once={false}>
         <div id={'contact'} className={styles.contact_container}>
             <h1 className={styles.contact_head}>Contact</h1>
             <p className={styles.contact_text}>
@@ -11,6 +14,8 @@ const Contact = (): JSX.Element => {
                 </a>
             </p>
         </div>
+            </AnimatedSection>
+        </>
     );
 }
 

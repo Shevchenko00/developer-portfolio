@@ -3,9 +3,11 @@ import ProjectCard from "../ProjectCard/ProjectCard.tsx";
 import TShop from "../../assets/TShop.png";
 import RentalApartmentsLogo from "../../assets/RentalApartmentsLogo.png";
 import styles from './Partfolio.module.scss'
+import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 const Portfolio = (): JSX.Element => {
     return (
         <>
+            <AnimatedSection direction={'bottom'} once={false}>
             <h1 id={'portfolio'} className={styles.partfolio_head}>Portfolio Projects</h1>
             <div className={styles.partfolio_container}>
             <ProjectCard image={TShop} title={'Telegram E-Commerce bot'}
@@ -29,6 +31,7 @@ const Portfolio = (): JSX.Element => {
                                  'Secure, responsive, and user-friendly'
                              ]}          />
             </div>
+            </AnimatedSection>
         </>
     )
 

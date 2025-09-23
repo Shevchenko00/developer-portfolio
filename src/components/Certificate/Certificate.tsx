@@ -6,9 +6,11 @@ import michigan_logo from "../../assets/michigan_logo.png";
 
 
 import EducationCard from "../EducationCard/EducationCard.tsx";
+import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 const Certificate = ():JSX.Element => {
     return (
         <>
+            <AnimatedSection direction={'left'} once={false}>
             <h1 id={'certificate'} className={styles.education_head}>Education & Certificates</h1>
             <section className={styles.educationSection}>
 
@@ -41,6 +43,7 @@ const Certificate = ():JSX.Element => {
                 />
             </div>
         </section>
+            </AnimatedSection>
         </>
     );
 };
