@@ -6,22 +6,23 @@ import About from "./components/About/About.tsx";
 import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import Certificate from "./components/Certificate/Certificate.tsx";
 import Experience from "./components/Experience/Experience.tsx";
+import Contact from "./components/Contact/Contact.tsx";
 
 const App = ():JSX.Element => {
     return (
-        <>
-            <Header/>
-            <Divider/>
-            <About/>
-            <Divider/>
-            <Portfolio/>
-            <Divider/>
-            <Certificate/>
-            <Divider/>
-            <Experience/>
-            <Divider/>
-
-        </>
+        <div className="app_container">
+            <Header />
+            <Divider />
+            <About />
+            <Divider />
+            <Portfolio />
+            <Divider />
+            <Certificate />
+            <Divider />
+            <Experience />
+            <Divider />
+            <Contact />
+        </div>
     );
-}
+};
 export default App

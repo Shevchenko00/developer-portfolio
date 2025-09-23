@@ -25,12 +25,14 @@
 .card .content .skills {
   font-size: 0.9rem;
   background-color: #141414;
+  font-family: "Open Sans Re", sans-serif;
   color: #d1d5db;
   margin-left: 0.5rem;
 }
 .card .content .skills ul {
   padding-left: 1rem;
   background-color: #141414;
+  font-family: "Open Sans Re", sans-serif;
   list-style-type: disc;
 }
 .card .content .skills li {
