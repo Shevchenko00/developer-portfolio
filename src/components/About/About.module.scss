@@ -11,7 +11,32 @@
     padding: 20px 15px;
   }
 }
+.contact_button {
+  border: solid 2px #ff7fcf;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 33px;
+  color: black;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 61px auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
+  &:hover {
+    background-color: #ff7fcf;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin-top: 40px;
+  }
+}
 .about_head {
   color: #ffffff;
   background-color: #141414;

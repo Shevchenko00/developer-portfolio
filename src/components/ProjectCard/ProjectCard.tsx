@@ -6,9 +6,10 @@ type CardProps = {
     title: string;
     description: string;
     features: string[];
+    link: string;
 };
 
-const ProjectCard: React.FC<CardProps> = ({ image, title, description, features}) => {
+const ProjectCard: React.FC<CardProps> = ({ image, title, description, features, link}) => {
     return (
 
         <div className={styles.card}>
@@ -21,8 +22,12 @@ const ProjectCard: React.FC<CardProps> = ({ image, title, description, features}
                         <li key={index}>{feature}</li>
                     ))}
                 </ul>
-                <button className={styles.project_button}>GitHub</button>
-            </div>
+                <button
+                    onClick={() => window.open(link, '_blank', 'noopener,noreferrer')}
+                    className={styles.project_button}
+                >
+                    GitHub
+                </button>            </div>
         </div>
     );
 };

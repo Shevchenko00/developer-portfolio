@@ -7,11 +7,12 @@ import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import Certificate from "./components/Certificate/Certificate.tsx";
 import Experience from "./components/Experience/Experience.tsx";
 import Contact from "./components/Contact/Contact.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 const App = ():JSX.Element => {
     return (
         <div className="app_container">
-            <Header />
+            <Header  />
             <Divider />
             <About />
             <Divider />
@@ -22,6 +23,7 @@ const App = ():JSX.Element => {
             <Experience />
             <Divider />
             <Contact />
+            <Footer/>
         </div>
     );
 };
