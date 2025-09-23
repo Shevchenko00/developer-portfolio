@@ -14,11 +14,13 @@ const EducationCard: React.FC<CardProps> = ({ logo, title, skills }) => {
 
     return (
         <div className={styles.card}>
-            <img src={logo} alt={title} className={styles.logo} />
+            <div className={styles.logoWrapper}>
+                <img src={logo} alt={title} className={styles.logo} />
+            </div>
             <div className={styles.content}>
-                <div className={styles.title}>{title}</div>
+                <h3 className={styles.title}>{title}</h3>
                 <div className={styles.skills}>
-                    <span>SKILLS:</span>
+                    <span className={styles.label}>Skills:</span>
                     <div className={styles.skillsGrid}>
                         <ul>
                             {col1.map((skill, i) => (

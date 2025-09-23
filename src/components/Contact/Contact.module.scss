@@ -1,38 +1,50 @@
 .contact_container {
-  height: 555px;
-  width: 975px;
-  margin: 0 auto;
+  background-color: #141414;
   color: white;
+  width: 100%;
+  max-width: 975px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
 }
 
 .contact_head {
-  color: #FFFFFF ;
+  color: #ffffff;
   background-color: #141414;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   padding-top: 78px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding-top: 40px;
+  }
 }
 
 .contact_text {
   background-color: #141414;
   color: white;
-  height: 555px;
-  width: 975px;
-  padding-left: 161px;
-  padding-right: 161px;
-  padding-top: 61px;
   font-size: 1.2rem;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
+  max-width: 975px;
+  padding: 61px 161px;
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
-
-
-
 .contact_button {
-  margin: 61px;
   border: solid 2px #ff7fcf;
   background-color: white;
   text-decoration: none;
@@ -44,13 +56,17 @@
   font-weight: bold;
   display: block;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  //margin-bottom: 8px;
+  margin: 61px auto;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
     background-color: #ff7fcf;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin-top: 40px;
   }
 }

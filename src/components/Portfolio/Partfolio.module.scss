@@ -1,14 +1,20 @@
 .partfolio_container {
   margin: 0 auto;
-  width: 975px ;
+  width: 975px;
   height: 669px;
   background-color: #141414;
-}
-.partfolio_head {
-  color: #FFFFFF ;
-  background-color: #141414;
-  width: 975px ;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+}
+
+.partfolio_head {
+  color: #ffffff;
+  background-color: #141414;
+  width: 975px;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -16,4 +22,11 @@
   padding-bottom: 61px;
   margin: 0 auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

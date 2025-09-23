@@ -2,11 +2,24 @@
   background-color: #141414;
   color: white;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   margin-left: 136px;
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+  box-shadow: 0 0 10px rgba(255, 127, 207, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 14px rgba(255, 127, 207, 0.3);
+}
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 1rem;
+  }
 }
 
 .image {
@@ -16,12 +29,23 @@
   background-color: #141414;
   border-radius: 0.25rem;
 }
+@media (max-width: 768px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .content {
   display: flex;
   background-color: #141414;
   flex-direction: column;
   flex: 1;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .title {
@@ -30,11 +54,23 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
 
 .description {
   background-color: #141414;
   margin-bottom: 0.5rem;
   color: #d1d5db;
+}
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
 }
 
 .features {
@@ -43,9 +79,10 @@
   color: #d1d5db;
   background-color: #141414;
 }
-
-li {
-  background-color: #141414;
+@media (max-width: 768px) {
+  .features {
+    padding-left: 1rem;
+  }
 }
 
 .project_button {
@@ -66,6 +103,14 @@ li {
 .project_button:hover {
   background-color: #ff7fcf;
   color: white;
+}
+@media (max-width: 768px) {
+  .project_button {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=ProjectCard.module.css.map */

@@ -1,24 +1,44 @@
 .about_container {
   margin: 0 auto;
-  width: 975px ;
+  width: 975px;
   height: 400px;
   background-color: #141414;
+
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
 }
 
 .about_head {
-  color: #FFFFFF ;
+  color: #ffffff;
   background-color: #141414;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
   padding-left: 161px;
   padding-top: 78px;
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .about_paragraph {
   background-color: #141414;
-  color: #FFFFFF ;
+  color: #ffffff;
   font-family: "Open Sans Re", sans-serif;
   font-size: 15px;
   margin: 0 161px 100px;
+
+  @media (max-width: 768px) {
+    margin: 20px 0 40px;
+    font-size: 14px;
+    text-align: justify;
+  }
 }

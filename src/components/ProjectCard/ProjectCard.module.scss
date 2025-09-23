@@ -2,44 +2,72 @@
   background-color: #141414;
   color: white;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   margin-left: 136px;
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+  box-shadow: 0 0 10px rgba(255, 127, 207, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 14px rgba(255, 127, 207, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 1rem;
+  }
 }
+
 
 .image {
   width: 228px;
   height: 174px;
   object-fit: contain;
   background-color: #141414;
-
   border-radius: 0.25rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content {
   display: flex;
   background-color: #141414;
-
   flex-direction: column;
   flex: 1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .title {
-  //background-color: #111111;
   background-color: #141414;
-
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 
 .description {
   background-color: #141414;
-
   margin-bottom: 0.5rem;
   color: #d1d5db;
+
+  @media (max-width: 768px) {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
 }
 
 .features {
@@ -47,14 +75,13 @@
   margin-bottom: 0.75rem;
   color: #d1d5db;
   background-color: #141414;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+  }
 }
 
-
-li {
-  background-color: #141414;
-}
-
-.project_button{
+.project_button {
   border: solid 2px #ff7fcf;
   background-color: white;
   border-radius: 10px;
@@ -72,5 +99,12 @@ li {
   &:hover {
     background-color: #ff7fcf;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

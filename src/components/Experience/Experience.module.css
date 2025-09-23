@@ -1,24 +1,37 @@
 .experienceSection {
   background-color: #141414;
   color: white;
-  width: 975px;
-  height: 421px;
-  margin: 0 auto;
   font-family: sans-serif;
+  width: 100%;
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 61px 20px;
   padding-left: 161px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 30px 15px;
+  }
 }
 
 .title {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #141414;
-  width: 975px;
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  padding-top: 61px;
-  padding-bottom: 61px;
-  margin: 0 auto;
   text-align: center;
+  width: 100%;
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 61px 20px;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    padding: 30px 15px;
+  }
 }
 
 .experienceCard {
@@ -27,8 +40,17 @@
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .experienceCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
 }
 
 .logo {
@@ -38,10 +60,21 @@
   object-fit: contain;
   border-radius: 8px;
 }
+@media (max-width: 768px) {
+  .logo {
+    width: 100%;
+    max-width: 200px;
+  }
+}
 
 .experienceContent {
   background-color: #141414;
   flex: 1;
+}
+@media (max-width: 768px) {
+  .experienceContent {
+    width: 100%;
+  }
 }
 
 .position {
@@ -49,12 +82,24 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .position {
+    font-size: 1.1rem;
+  }
+}
 
 .period {
   background-color: #141414;
   font-weight: normal;
   color: #ccc;
   margin-left: 8px;
+}
+@media (max-width: 768px) {
+  .period {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+  }
 }
 
 .company {
@@ -69,6 +114,12 @@
   font-family: "Open Sans Re", sans-serif;
   padding-left: 20px;
   line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .responsibilities {
+    padding-left: 15px;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=Experience.module.css.map */

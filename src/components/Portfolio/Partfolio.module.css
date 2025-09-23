@@ -4,9 +4,16 @@
   height: 669px;
   background-color: #141414;
 }
+@media (max-width: 768px) {
+  .partfolio_container {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+}
 
 .partfolio_head {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #141414;
   width: 975px;
   font-family: "DM Sans", sans-serif;
@@ -16,6 +23,14 @@
   padding-bottom: 61px;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .partfolio_head {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=Partfolio.module.css.map */

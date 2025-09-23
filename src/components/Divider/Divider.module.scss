@@ -3,4 +3,8 @@
   width: 975px;
   margin: 0 auto;
   background-color: rgba(25, 10, 237, 0.7);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }

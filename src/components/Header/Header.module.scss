@@ -5,35 +5,81 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
+  position: relative;
+}
 
-  ul {
-    margin-left: 130px; // оставляем нужный отступ
-    list-style: none;
-    display: flex;
-    gap: 55px; // расстояние между пунктами
-    padding: 0;
-    background-color: transparent;
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    li {
-      font-size: 24px;
-      font-family: "DM Sans", sans-serif;
-      font-weight: bold;
-      background-color: #141414;
-      padding: 0; // убираем лишний padding-left, чтобы не сдвигать ещё
-      display: flex; // чтобы вложенный <a> занимал правильное место
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin-left: 130px;
 
-      a {
-        text-decoration: none;
-        color: white;
-        background-color: #141414;
-        padding: 5px 10px;
-        transition: color 0.3s ease;
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
 
-        &:hover {
-          color: #ff7fcf;
-        }
-      }
+    &:hover {
+      color: #ff7fcf;
     }
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-bottom: 5px;
+  gap: 5px;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+}
+
+.show {
+  display: flex !important;
+
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .nav li a {
+    font-size: 18px;
+    padding: 8px 12px;
   }
 }

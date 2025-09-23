@@ -18,5 +18,13 @@
   background-color: #ff7fcf;
   color: white;
 }
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
 
 /*# sourceMappingURL=Button.module.css.map */

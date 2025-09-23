@@ -1,44 +1,43 @@
-
-.education_title {
-  color: #FFFFFF ;
-  background-color: #141414;
-  width: 975px ;
-  font-family: "DM Sans", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  padding-top: 61px;
-  padding-bottom: 61px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-
+.education_title,
 .education_head {
-  color: #FFFFFF ;
+  color: #ffffff;
   background-color: #141414;
-  width: 975px ;
-
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  padding-top: 61px;
-  margin: 0 auto;
   text-align: center;
-}
-.educationSection {
-  height: 722px;
   margin: 0 auto;
-  padding-left: 161px;
-  padding-top: 61px;
-  width: 975px;
+  width: 100%;
+  max-width: 975px;
+  padding: 61px 20px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 30px 15px;
+  }
+}
+
+.educationSection {
   background-color: #141414;
   color: white;
   font-family: sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 975px;
+  padding: 61px 20px;
+  padding-left: 161px;
+  padding-right: 161px;
+  height: auto;
 
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+      text-align: center;
+    }
   }
 
   h3 {
@@ -46,13 +45,33 @@
     padding-top: 10px;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+
   }
 }
 
 .cardsContainer {
   background-color: #141414;
-
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
+  max-width: 975px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 15px 30px;
+  }
 }
