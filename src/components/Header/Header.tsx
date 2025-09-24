@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 
 const Header = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const HEADER_HEIGHT = 94; // укажи точную высоту твоего header
+    const HEADER_HEIGHT = 94;
 
     const toggleMenu = (): void => setIsOpen(!isOpen);
 
@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
             const rect = section.getBoundingClientRect().top;
             const scrollTop = window.pageYOffset + rect - HEADER_HEIGHT;
             window.scrollTo({ top: scrollTop, behavior: 'smooth' });
-            setIsOpen(false); // закрываем меню на мобильных
+            setIsOpen(false);
         }
     };
 
