@@ -39,14 +39,16 @@ const AnimatedSection = ({
     const finalState = { x: 0, y: 0, opacity: 1 };
 
     return (
-        <motion.div
-            initial={getInitialPosition()}
-            whileInView={finalState}
-            transition={{ duration, delay, ease: "easeOut" }}
-            viewport={{ once, amount }}
-        >
-            {children}
-        </motion.div>
+        <div style={{ overflowX: "hidden" }}>
+            <motion.div
+                initial={getInitialPosition()}
+                whileInView={finalState}
+                transition={{ duration, delay, ease: "easeOut" }}
+                viewport={{ once, amount }}
+            >
+                {children}
+            </motion.div>
+        </div>
     );
 };
 
