@@ -1,7 +1,8 @@
+@charset "UTF-8";
 .footer_container {
   margin: 0 auto;
   width: 100%;
-  max-width: 975px;
+  /* max-width: 975px; */
   min-height: 120px;
   background-color: rgba(255, 252, 252, 0.45);
   display: flex;
@@ -9,13 +10,13 @@
   justify-content: center;
   padding: 20px;
 }
+
 @media (max-width: 768px) {
   .footer_container {
     padding: 15px;
-    min-height: auto;
+    min-height: 0; /* вместо auto */
   }
 }
-
 .footer_text {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
@@ -24,6 +25,7 @@
   text-align: center;
   line-height: 1.6;
 }
+
 @media (max-width: 768px) {
   .footer_text {
     font-size: 13px;
