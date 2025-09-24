@@ -7,7 +7,7 @@ import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
 const Portfolio = (): JSX.Element => {
     return (
         <>
-            <AnimatedSection direction={'bottom'} once={true}>
+            <AnimatedSection direction={'top'} once={true}>
             <h1 id={'portfolio'} className={styles.partfolio_head}>Portfolio Projects</h1>
             <div className={styles.partfolio_container}>
             <ProjectCard image={TShop} title={'Telegram E-Commerce bot'}
