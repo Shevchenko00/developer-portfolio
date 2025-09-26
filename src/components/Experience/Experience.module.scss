@@ -107,7 +107,9 @@
   font-family: "Open Sans Re", sans-serif;
   padding-left: 20px;
   line-height: 1.6;
-
+  li {
+    background-color: transparent;
+  }
   @media (max-width: 768px) {
     padding-left: 15px;
     text-align: left;
