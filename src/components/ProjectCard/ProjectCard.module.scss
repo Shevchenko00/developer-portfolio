@@ -74,9 +74,13 @@
 .features {
   list-style: disc inside;
   margin-bottom: 0.75rem;
-  color: #d1d5db;
   background-color: #141414;
+  color: #d1d5db;
 
+  li {
+    background-color: #141414;
+
+  };
   @media (max-width: 768px) {
     padding-left: 1rem;
   }

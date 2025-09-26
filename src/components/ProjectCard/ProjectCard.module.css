@@ -78,7 +78,10 @@
 .features {
   list-style: disc inside;
   margin-bottom: 0.75rem;
+  background-color: #141414;
   color: #d1d5db;
+}
+.features li {
   background-color: #141414;
 }
 @media (max-width: 768px) {
