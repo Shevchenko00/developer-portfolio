@@ -8,6 +8,8 @@ import Certificate from "./components/Certificate/Certificate.tsx";
 import Experience from "./components/Experience/Experience.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 import Footer from "./components/Footer/Footer.tsx";
+import Stack from "./components/Stack/Stack.tsx";
+
 
 const App = ():JSX.Element => {
     return (
@@ -15,6 +17,8 @@ const App = ():JSX.Element => {
             <Header  />
             <Divider />
             <About />
+            <Divider />
+            <Stack/>
             <Divider />
             <Portfolio />
             <Divider />

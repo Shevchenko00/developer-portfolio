@@ -30,6 +30,7 @@ const Header = (): JSX.Element => {
 
             <ul className={`${styles.nav} ${isOpen ? styles.show : ''}`}>
                 <li><button onClick={() => scrollToSection('about')}>About me</button></li>
+                <li><button onClick={() => scrollToSection('stack')}>Stack</button></li>
                 <li><button onClick={() => scrollToSection('portfolio')}>Portfolio</button></li>
                 <li><button onClick={() => scrollToSection('certificate')}>Certificates</button></li>
                 <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>

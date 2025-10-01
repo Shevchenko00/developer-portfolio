@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.stack {
+  padding: 80px 20px;
+  background: #141414;
+  max-width: 975px;
+  margin: 0 auto;
+}
+.stack .title {
+  text-align: center;
+  font-family: "DM Sans", Serif;
+  font-size: 24px;
+  background-color: transparent;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: white;
+}
+.stack .container {
+  margin: 0 auto;
+  background-color: transparent;
+  width: 727px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.stack .card {
+  margin-bottom: 15px;
+  min-width: 100px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(255, 127, 207, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.stack .card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 127, 207, 0.5);
+}
+.stack .icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  background-color: #111111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stack .icon svg {
+  font-family: "Open Sans Re", sans-serif;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+}
+.stack .name {
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* 📱 адаптив */
+@media (max-width: 1024px) {
+  .stack .container {
+    width: 100%;
+  }
+  .stack .card {
+    flex: 1 1 30%;
+  }
+}
+@media (max-width: 768px) {
+  .stack .container {
+    gap: 20px;
+  }
+  .stack .card {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 480px) {
+  .stack {
+    padding: 40px 10px;
+  }
+  .stack .title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .stack .card {
+    flex: 1 1 45%;
+    max-width: none;
+  }
+  .stack .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .stack .icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  .stack .name {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=Stack.module.css.map */
