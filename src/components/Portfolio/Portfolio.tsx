@@ -1,6 +1,7 @@
 import type {JSX} from "react";
 import ProjectCard from "../ProjectCard/ProjectCard.tsx";
 import TShop from "../../assets/TShop.png";
+import TgAutoPost from "../../assets/TgAutoPost.png";
 import RentalApartmentsLogo from "../../assets/RentalApartmentsLogo.png";
 import styles from './Partfolio.module.scss'
 import AnimatedSection from "../AnimateWrapper/AnimateWrapper.tsx";
@@ -20,6 +21,20 @@ const Portfolio = (): JSX.Element => {
                              'Real-time updates',
                              'Admin dashboard'
                          ]}          />
+                <ProjectCard
+                    image={TgAutoPost}
+                    title={'Telegram Content Automation System'}
+                    link={'https://github.com/Shevchenko00/TgAutoPost'}
+                    description={'Event-driven microservice system for automated scraping, deduplication, and posting to Telegram'}
+                    features={[
+                        'Automated web scraping with Playwright',
+                        'Real-time deduplication using Redis',
+                        'Event-driven architecture via Apache Kafka',
+                        'Automatic Telegram posting service',
+                        'React dashboard for monitoring and management',
+                        'Dockerized microservices deployment'
+                    ]}
+                />
                 <ProjectCard image={RentalApartmentsLogo} title={'Django + React booking system'}
                              description={'A modern web app for renting and managing apartments'}
                              link={'https://github.com/Shevchenko00/RentalAppartments'}

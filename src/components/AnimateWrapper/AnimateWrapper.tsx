@@ -39,7 +39,7 @@ const AnimatedSection = ({
     const finalState = { x: 0, y: 0, opacity: 1 };
 
     return (
-        <div style={{ overflowX: "hidden" }}>
+        <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
             <motion.div
                 initial={getInitialPosition()}
                 whileInView={finalState}

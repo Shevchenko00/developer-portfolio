@@ -1,7 +1,7 @@
 .partfolio_container {
   margin: 0 auto;
   width: 975px;
-  height: 669px;
+  height: 1000px;
   background-color: #141414;
 }
 @media (max-width: 768px) {
