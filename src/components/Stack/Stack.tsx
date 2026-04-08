@@ -15,7 +15,7 @@ import {
     SiWebpack,
     SiVite,
     SiHtml5,
-    SiCss3
+    SiCss
 } from "react-icons/si"
 
 const stackItems = [
