@@ -33,7 +33,7 @@ const stackItems = [
     { name: "Webpack", icon: <SiWebpack /> },
     { name: "Vite", icon: <SiVite /> },
     { name: "HTML5", icon: <SiHtml5 /> },
-    { name: "CSS3", icon: <SiCss3 /> },
+    { name: "CSS3", icon: <SiCss /> },
 ]
 
 const Stack: FC = () => {
